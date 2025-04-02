@@ -1,0 +1,20 @@
+function beanGame() {
+  let white = 75;
+  let black = 150;
+
+  while (white + black > 1) {
+    if (white >= 2) {
+      // 
+      white -= 2;
+      black += 1;
+    } else if (white >= 1 && black >= 1) {
+      // 
+      black -= 1;
+    } else {
+      // 
+      black -= 1;
+    }
+  }
+
+  if (white === 1) {
+    console.log
