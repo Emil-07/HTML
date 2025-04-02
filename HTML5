@@ -1,0 +1,8 @@
+function filterArray(arr, filterFn) {
+  return arr.filter(filterFn);
+}
+
+const numbers = [1, 2, 3, 4, 5];
+const isOdd = (num) => num % 2 !== 0; 
+
+console.log(filterArray(numbers, isOdd)); //: [1, 3, 5]
