@@ -1,0 +1,9 @@
+function buildPyramid(height) {
+  let pyramid = "";
+  for (let i = 1; i <= height; i++) {
+    pyramid += Array.from({ length: i }, (_, index) => index + 1).join("") + "\n";
+  }
+  return pyramid;
+}
+
+let height = 5; //
